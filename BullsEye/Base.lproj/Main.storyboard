@@ -104,7 +104,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="BmK-IY-fYA" id="D8M-cx-kOj"/>
+                        <outlet property="scoreLabel" destination="f7X-BA-18j" id="rGu-EI-5lQ"/>
                         <outlet property="slider" destination="W2o-Ws-xFN" id="BOa-r2-iem"/>
+                        <outlet property="targetLabel" destination="Yiy-qR-4n6" id="Mxf-Tc-K2r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
