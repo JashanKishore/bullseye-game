@@ -8,12 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var  currentValue: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
-    @IBAction func showAlert(_ sender: Any) {
+    @IBAction func showAlert() {
         let alert = UIAlertController(
             title: "Hello, World",
             message: "This is my first app!",
@@ -26,6 +28,11 @@ class ViewController: UIViewController {
 
           alert.addAction(action)
           present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func sliderMoved(_ slider: UISlider) {
+        //print("The value of slider is now: \(slider.value)")
+        currentValue = lroundf(slider.value)
     }
     
 }
