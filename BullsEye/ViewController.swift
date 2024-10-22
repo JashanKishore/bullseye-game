@@ -30,10 +30,29 @@ class ViewController: UIViewController {
         let points = 100 - difference
         score += points
         
+        var title = ""
+
+        if points <= 20 {
+            title = "Good Try"
+        }
+        else if points > 20 && points <= 50 {
+            title = "Great Shot"
+        }
+        else if points > 50 && points <= 90 {
+            title = "Amazing Shot!"
+        }
+        else if points > 90 && points <= 99 {
+            title = "WOW Sharpshooter"
+        } else if points == 100 {
+            title = "!! BULL'S EYE !!"
+        } else {
+            title = "Target hit"
+        }
+        
         let message = "You hit: \(currentValue)" + "\nYou scored \(points) points"
         
         let alert = UIAlertController(
-            title: "Hello, World",
+            title: title,
             message: message,
             preferredStyle: .alert)
 
