@@ -27,27 +27,24 @@ class ViewController: UIViewController {
     @IBAction func showAlert() {
         
         let difference = abs(currentValue - targetValue)
-        let points = 100 - difference
-        score += points
         
-        var title = ""
-
-        if points <= 20 {
-            title = "Good Try"
-        }
-        else if points > 20 && points <= 50 {
-            title = "Great Shot"
-        }
-        else if points > 50 && points <= 90 {
-            title = "Amazing Shot!"
-        }
-        else if points > 90 && points <= 99 {
-            title = "WOW Sharpshooter"
-        } else if points == 100 {
-            title = "!! BULL'S EYE !!"
-        } else {
-            title = "Target hit"
-        }
+        var points = 100 - difference
+        
+        let title: String
+          if difference == 0 {
+            title = "Perfect!"
+            points += 100
+          } else if difference < 5 {
+            title = "You almost had it!"
+              if difference == 1 {
+                  points += 50
+              }
+          } else if difference < 10 {
+            title = "Pretty good!"
+          } else {
+            title = "Not even close..."
+          }
+        score += points
         
         let message = "You hit: \(currentValue)" + "\nYou scored \(points) points"
         
