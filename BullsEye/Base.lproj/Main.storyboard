@@ -105,6 +105,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="about"/>
+                                <connections>
+                                    <segue destination="QPL-cI-Pfi" kind="presentation" modalTransitionStyle="flipHorizontal" id="r4p-MT-TwP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-BA-18j">
                                 <rect key="frame" x="249" y="320" width="48" height="25"/>
@@ -139,12 +142,52 @@
             </objects>
             <point key="canvasLocation" x="139.880059970015" y="4"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="R44-Ow-7N2">
+            <objects>
+                <viewController id="QPL-cI-Pfi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HGw-jc-Dh9">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gwg-1k-UPS">
+                                <rect key="frame" x="34" y="47" width="613" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">*** Bull’s Eye ***
+
+Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a slider.
+
+Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ip-Ay-dOi">
+                                <rect key="frame" x="296" y="320" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PJP-IA-q8v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9DV-0O-tGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="806"/>
+        </scene>
     </scenes>
     <resources>
         <image name="about" width="300" height="301"/>
         <image name="bg" width="1792" height="1024"/>
         <image name="hitme" width="1024" height="1024"/>
         <image name="restart" width="214" height="215"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
