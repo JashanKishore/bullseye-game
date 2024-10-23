@@ -6,13 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		1846C86F2CC89748009CF362 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846C86E2CC89748009CF362 /* AboutViewController.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		1846C8362CC70721009CF362 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1846C86E2CC89748009CF362 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,7 +45,6 @@
 		1846C82D2CC70721009CF362 = {
 			isa = PBXGroup;
 			children = (
-				1846C86E2CC89748009CF362 /* AboutViewController.swift */,
 				1846C8382CC70721009CF362 /* BullsEye */,
 				1846C8372CC70721009CF362 /* Products */,
 			);
@@ -138,7 +132,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1846C86F2CC89748009CF362 /* AboutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
